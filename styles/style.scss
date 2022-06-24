@@ -13,6 +13,7 @@ $bg-profile: hsl(246, 80%, 60%);
 
 $main-bg: hsl(226, 43%, 10%);
 $card-bg: hsl(235, 46%, 20%);
+$card-bg-light: hsl(235, 46%, 30%);
 $text-clr-inactive: hsl(235, 45%, 61%);
 $text-clr-active: hsl(236, 100%, 87%);
 
@@ -200,6 +201,10 @@ body {
     height: 100%;
     padding: clamp(1rem, -0.25rem + 2.5vw, 2rem);
     transition: transform 1s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+    &:hover {
+      background-color: $card-bg-light;
+    }
   }
   &__ellipsis {
     filter: invert(90%) sepia(21%) saturate(6009%) hue-rotate(190deg)
