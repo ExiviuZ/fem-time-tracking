@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <!-- Whole Container -->
+    <div class="container">
+      <!-- Container Profile -->
+      <div class="container__profile">
+        <div class="container__profile-top">
+          <img
+            src="images/image-jeremy.png"
+            class="container__profile-image"
+            alt=""
+          />
+          <p class="container__description">
+            <span>Report for</span>
+            <span>Jeremy Robson</span>
+          </p>
+        </div>
+        <ul role="list" class="container__list">
+          <li class="container__item">
+            <button data-filter="daily">Daily</button>
+          </li>
+          <li class="container__item">
+            <button data-filter="weekly">Weekly</button>
+          </li>
+          <li class="container__item">
+            <button data-filter="monthly">Monthly</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Work -->
+      <div class="container__card work" dataset-category="work">
+        <img src="images/icon-work.svg" class="container__card-icon" alt="" />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Work</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">32hrs</span>
+            <span class="container__card-data-previous">Last Week - 36hrs</span>
+          </div>
+        </div>
+      </div>
+      <!-- Play -->
+      <div class="container__card play" dataset-category="play">
+        <img src="images/icon-play.svg" class="container__card-icon" alt="" />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Play</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">10hrs</span>
+            <span class="container__card-data-previous">Last Week - 8hrs</span>
+          </div>
+        </div>
+      </div>
+      <!-- Study -->
+      <div class="container__card study" dataset-category="study">
+        <img src="images/icon-study.svg" class="container__card-icon" alt="" />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Study</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">4hrs</span>
+            <span class="container__card-data-previous">Last Week - 7hrs</span>
+          </div>
+        </div>
+      </div>
+      <!-- Exercise -->
+      <div class="container__card exercise" dataset-category="exercise">
+        <img
+          src="images/icon-exercise.svg"
+          class="container__card-icon"
+          alt=""
+        />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Exercise</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">4hrs</span>
+            <span class="container__card-data-previous">Last Week - 5hrs</span>
+          </div>
+        </div>
+      </div>
+      <!-- Social -->
+      <div class="container__card social" dataset-category="social">
+        <img src="images/icon-social.svg" class="container__card-icon" alt="" />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Social</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">5hrs</span>
+            <span class="container__card-data-previous">Last Week - 10hrs</span>
+          </div>
+        </div>
+      </div>
+      <!-- Self Care -->
+      <div class="container__card self-care" dataset-category="work">
+        <img
+          src="images/icon-self-care.svg"
+          class="container__card-icon"
+          alt=""
+        />
+        <div class="container__card-content">
+          <div class="container__card-title">
+            <span>Self Care</span>
+            <img
+              src="images/icon-ellipsis.svg"
+              class="container__ellipsis"
+              alt=""
+            />
+          </div>
+          <div>
+            <span class="container__card-data-now">2hrs</span>
+            <span class="container__card-data-previous">Last Week - 2hrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
