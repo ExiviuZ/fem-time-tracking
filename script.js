@@ -233,9 +233,23 @@ function filterContainer(activity, filter, container) {
   container.querySelector(".container__card-data-now").innerText = `${
     data.timeframes[filter].current
   }${data.timeframes[filter].current > 1 ? "hrs" : "hr"}`;
-  container.querySelector(
-    ".container__card-data-previous"
-  ).innerText = `Last Week - ${data.timeframes[filter].previous}${
-    data.timeframes[filter].previous > 1 ? "hrs" : "hr"
-  }`;
+  if (filter === "daily") {
+    container.querySelector(
+      ".container__card-data-previous"
+    ).innerText = `Yesterday - ${data.timeframes[filter].previous}${
+      data.timeframes[filter].previous > 1 ? "hrs" : "hr"
+    }`;
+  } else if (filter === "weekly") {
+    container.querySelector(
+      ".container__card-data-previous"
+    ).innerText = `Last Week - ${data.timeframes[filter].previous}${
+      data.timeframes[filter].previous > 1 ? "hrs" : "hr"
+    }`;
+  } else if (filter === "monthly") {
+    container.querySelector(
+      ".container__card-data-previous"
+    ).innerText = `Last Month - ${data.timeframes[filter].previous}${
+      data.timeframes[filter].previous > 1 ? "hrs" : "hr"
+    }`;
+  }
 }
