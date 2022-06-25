@@ -104,6 +104,8 @@ const timeData = [
 ];
 const filterButtons = document.querySelectorAll("button");
 const containerCards = document.querySelectorAll(".container__card");
+const weekly = document.querySelector("[data-filter='weekly']");
+weekly.setAttribute("disabled", true);
 
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
